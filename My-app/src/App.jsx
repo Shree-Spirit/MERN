@@ -17,18 +17,34 @@
   
 // }
 
-import React, { useState } from 'react';
-const App=()=>{
-  const[num,setNum]=useState(10)
+// import React, { useState } from 'react';
+// const App=()=>{
+//   const[num,setNum]=useState(10)
 
-  const ChangeValue=()=>{
-    setNum(20)
-  }
+//   const ChangeValue=()=>{
+//     setNum(20)
+//   }
+//   return(
+//     <div>
+//       <h1>Number is {num}</h1>
+//       <button onClick={ChangeValue}>Change Number</button>
+//     </div>
+//   )
+// }
+
+import React, { useState } from "react";
+
+const App=()=>{
+  const [a,updateNum] = useState(10);
+  const updateNumber=()=>{
+    updateNum(a+10)
+  };
   return(
     <div>
-      <h1>Number is {num}</h1>
-      <button onClick={ChangeValue}>Change Number</button>
+      <h1>Current Nuber is {a}</h1>
+      <button onClick={updateNumber}>Updated Number is </button>
     </div>
   )
 }
-export default App
+
+export default App;
