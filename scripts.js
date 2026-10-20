@@ -1,2 +1,2 @@
-var div = React.createElement("div",null,"Hello from React")
+var h1 = React.createElement("h1",null,"Hello from React")
 console.log(root);
